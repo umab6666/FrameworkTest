@@ -10,6 +10,7 @@
 		15382B84221A8FBC001D90FB /* FrameworkTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15382B7A221A8FBB001D90FB /* FrameworkTest.framework */; };
 		15382B89221A8FBC001D90FB /* FrameworkTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15382B88221A8FBC001D90FB /* FrameworkTestTests.swift */; };
 		15382B8B221A8FBC001D90FB /* FrameworkTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 15382B7D221A8FBB001D90FB /* FrameworkTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15382BA2221A9C76001D90FB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15382BA1221A9C76001D90FB /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		15382B83221A8FBC001D90FB /* FrameworkTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15382B88221A8FBC001D90FB /* FrameworkTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTestTests.swift; sourceTree = "<group>"; };
 		15382B8A221A8FBC001D90FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15382BA1221A9C76001D90FB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				15382B7D221A8FBB001D90FB /* FrameworkTest.h */,
 				15382B7E221A8FBB001D90FB /* Info.plist */,
+				15382BA1221A9C76001D90FB /* WebService.swift */,
 			);
 			path = FrameworkTest;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					15382B79221A8FBB001D90FB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					15382B82221A8FBC001D90FB = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15382BA2221A9C76001D90FB /* WebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		15382B8F221A8FBC001D90FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.switch.FrameworkTest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		15382B90221A8FBC001D90FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		15382B92221A8FBC001D90FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FXMTQ7GN5N;
 				INFOPLIST_FILE = FrameworkTestTests/Info.plist;
@@ -409,6 +418,7 @@
 		15382B93221A8FBC001D90FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FXMTQ7GN5N;
 				INFOPLIST_FILE = FrameworkTestTests/Info.plist;
