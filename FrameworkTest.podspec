@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   
  
-  s.source       = { :git => "https://github.com/umab6666/FrameworkTest.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/umab6666/FrameworkTest.git", :tag => "1.0.0" }
 
 
  
