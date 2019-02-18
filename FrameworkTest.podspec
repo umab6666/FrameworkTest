@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
 
  
   s.source_files  = "FrameworkTest"
-  
+  s.swift_version = '4.2'
 
  end
